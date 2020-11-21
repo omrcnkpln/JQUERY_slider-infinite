@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Slider">
+    <meta name="author" content="@pasadagli">
+    <meta name="keywords" content="slider">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Slider</title>
+
+    <!-- _____________________________ AOS.CSS _____________________________________________________________ -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+
+    <!-- _____________________________ LIGHTBOX.CSS _____________________________________________________________ -->
+    <!-- lightbox css içinde image yolu ile oynaman gerekebilir -->
+    <!-- <link rel="stylesheet" href="dest/css/default/lightbox.css" /> -->
+
+    <!-- _____________________________ ANIMATE.CSS _____________________________________________________________ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+
+
+    <!-- _____________________________ FONT-AWESOME _____________________________________________________________ -->
+    <!-- biri css i çalıştırıyo diğeri html i -->
+    <!-- <link rel="stylesheet" type="text/css" href="fonts/fontawesome/all.min.css"> -->
+    <!-- <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'> -->
+
+    <!-- yeni -->
+    <!-- <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'> -->
+
+
+    <!-- _____________________________ SCROLL-REVEAL _____________________________________________________________ -->
+    <!-- scroll a göre animasyon eklemek için wow un yaptığı iş -->
+    <!-- <script type="text/javascript" src="scripts/scrollreveal.min.js"></script> -->
+
+    <!-- _____________________________ BOOTSTRAP.CSS _____________________________________________________________ -->
+    <link rel="stylesheet" href="dest/css/default/bootstrap.css">
+
+    <!-- _____________________________ RESET.CSS _____________________________________________________________ -->
+    <link rel="stylesheet" type="text/css" href="dest/css/default/reset.css">
+
+    <!-- _____________________________ STYLE.CSS _____________________________________________________________ -->
+    <link rel="stylesheet" type="text/css" href="dest/css/style.css">
+</head>
+
+<body>
+    <div id="overlay" class="overlay shadow">
+        <div class="item r-50 item-0 animate__animated">
+            <div class="shadow">
+                <ul class="animate__animated">
+                    <li class="string my-2"></li>
+
+                    <li>
+                        <h3 class="my-2 animate__animated animate__fadeInUp">japan Alps</h3>
+                    </li>
+
+                    <li>
+                        <h1 class="my-2 animate__animated animate__fadeInUp">
+                            NAGANA PREFECTURE
+                        </h1>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="item item-1 animate__animated cover">
+            <div class="shadow">
+                <ul class="animate__animated animate__fadeOutDown">
+                    <li class="string my-2"></li>
+
+                    <li>
+                        <h3 class="my-2 animate__animated animate__fadeInUp">Tarifa Spain</h3>
+                    </li>
+
+                    <li>
+                        <h1 class="my-2 animate__animated animate__fadeIn Up">
+                            NAGANA PREFECTURE
+                        </h1>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="item r-30 item-2 animate__animated">
+            <div class="shadow">
+                <ul class="animate__animated">
+                    <li class="string my-2"></li>
+
+                    <li>
+                        <h3 class="my-2 animate__animated animate__fadeInUp">Switzerland Alphs</h3>
+                    </li>
+
+                    <li>
+                        <h1 class="my-2 animate__animated animate__fadeInUp">
+                            NAGANA PREFECTURE
+                        </h1>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="item r-20 item-3 animate__animated">
+            <div class="shadow">
+                <ul class="animate__animated">
+                    <li class="string my-2"></li>
+
+                    <li>
+                        <h3 class="my-2 animate__animated animate__fadeInUp">Sahara Desert</h3>
+                    </li>
+
+                    <li>
+                        <h1 class="my-2 animate__animated animate__fadeInUp">
+                            NAGANA PREFECTURE
+                        </h1>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="item r-10 item-4 animate__animated">
+            <div class="shadow">
+                <ul class="animate__animated">
+                    <li class="string my-2"></li>
+
+                    <li>
+                        <h3 class="my-2 animate__animated animate__fadeInUp">Sierra Nevada</h3>
+                    </li>
+
+                    <li>
+                        <h1 class="my-2 animate__animated animate__fadeInUp">
+                            NAGANA PREFECTURE
+                        </h1>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="item r-0 item-5 animate__animated">
+            <div class="shadow">
+                <ul class="animate__animated">
+                    <li class="string my-2"></li>
+
+                    <li>
+                        <h3 class="my-2 animate__animated animate__fadeInUp">@pasadagli</h3>
+                    </li>
+
+                    <li>
+                        <h1 class="my-2 animate__animated animate__fadeInUp">
+                            NAGANA PREFECTURE
+                        </h1>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="center">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <a class="navbar-brand text-white-50" href="#">Navbar</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link text-white-50" href="#">Home <span
+                                            class="sr-only">(current)</span></a>
+                                </li>
+
+                                <li class="nav-item active">
+                                    <a class="nav-link text-white-50" href="#">Home <span
+                                            class="sr-only">(current)</span></a>
+                                </li>
+
+                                <li class="nav-item active">
+                                    <a class="nav-link text-white-50" href="#">Home <span
+                                            class="sr-only">(current)</span></a>
+                                </li>
+
+                                <li class="nav-item active">
+                                    <a class="nav-link text-white-50" href="#">Home <span
+                                            class="sr-only">(current)</span></a>
+                                </li>
+
+                                <li class="nav-item active">
+                                    <a class="nav-link text-white-50" href="#">Home <span
+                                            class="sr-only">(current)</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="responsive-height">
+
+            </div>
+
+            <div class="content-wrapper">
+                <div class="row content">
+                    <div class="col-5">
+                        <ul>
+                            <li class="string my-2 animate__animated animate__fadeInUp animate__delay-1s"></li>
+                            <li>
+                                <h3 class="my-2 animate__animated animate__fadeInUp animate__delay-1s">japan Alps</h3>
+                            </li>
+                            <li>
+                                <h1 class="my-2 animate__animated animate__fadeInUp animate__delay-1s">
+                                    NAGANA PREFECTURE
+                                </h1>
+                            </li>
+                            <li>
+                                <h5 class="my-2 animate__animated animate__fadeInUp animate__delay-1s">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias placeat minus vitae
+                                    error, ipsum voluptatum velit, neque eum labore quasi a mollitia non! Aut mollitia natus
+                                    adipisci, dolorum cupiditate dolor.
+                                </h5>
+                            </li>
+    
+                            <li>
+                                <ul class="d-flex animate__animated animate__fadeInUp animate__delay-1s">
+                                    <li class="bookmark mr-2">
+                                        <img src="images/bookmark-white.svg" alt="bookmark">
+                                    </li>
+    
+                                    <li class="btn ml-2">
+                                        <div class="btn-hover">
+                                        </div>
+                                        TAKE A TOUR WİTH US
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="row content">
+                    <div class="col-5">
+                        <ul class="animate__delay-2s">
+                            <li class="string my-2 animate__animated animate__fadeInUp animate__delay-1s"></li>
+                            <li>
+                                <h3 class="my-2 animate__animated animate__fadeInUp animate__delay-1s">Tarifa Spain</h3>
+                            </li>
+                            <li>
+                                <h1 class="my-2 animate__animated animate__fadeInUp animate__delay-1s">
+                                    NAGANA PREFECTURE
+                                </h1>
+                            </li>
+                            <li>
+                                <h5 class="my-2 animate__animated animate__fadeInUp animate__delay-1s">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias placeat minus vitae
+                                    error, ipsum voluptatum velit, neque eum labore quasi a mollitia non! Aut mollitia natus
+                                    adipisci, dolorum cupiditate dolor.
+                                </h5>
+                            </li>
+    
+                            <li>
+                                <ul class="d-flex animate__animated animate__fadeInUp animate__delay-1s">
+                                    <li class="bookmark mr-2">
+                                        <img src="images/bookmark-white.svg" alt="bookmark">
+                                    </li>
+    
+                                    <li class="btn ml-2">
+                                        <div class="btn-hover">
+                                        </div>
+                                        TAKE A TOUR WİTH US
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="row content">
+                    <div class="col-5">
+                        <ul>
+                            <li class="string my-2 animate__animated animate__fadeInUp animate__delay-1s"></li>
+                            <li>
+                                <h3 class="my-2 animate__animated animate__fadeInUp animate__delay-1s">Switzerland Alphs
+                                </h3>
+                            </li>
+                            <li>
+                                <h1 class="my-2 animate__animated animate__fadeInUp animate__delay-1s">
+                                    NAGANA PREFECTURE
+                                </h1>
+                            </li>
+                            <li>
+                                <h5 class="my-2 animate__animated animate__fadeInUp animate__delay-1s">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias placeat minus vitae
+                                    error, ipsum voluptatum velit, neque eum labore quasi a mollitia non! Aut mollitia natus
+                                    adipisci, dolorum cupiditate dolor.
+                                </h5>
+                            </li>
+    
+                            <li>
+                                <ul class="d-flex animate__animated animate__fadeInUp animate__delay-1s">
+                                    <li class="bookmark mr-2">
+                                        <img src="images/bookmark-white.svg" alt="bookmark">
+                                    </li>
+    
+                                    <li class="btn ml-2">
+                                        <div class="btn-hover">
+                                        </div>
+                                        TAKE A TOUR WİTH US
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="row content">
+                    <div class="col-5">
+                        <ul>
+                            <li class="string my-2 animate__animated animate__fadeInUp animate__delay-1s"></li>
+                            <li>
+                                <h3 class="my-2 animate__animated animate__fadeInUp animate__delay-1s">Sahara Desert</h3>
+                            </li>
+                            <li>
+                                <h1 class="my-2 animate__animated animate__fadeInUp animate__delay-1s">
+                                    NAGANA PREFECTURE
+                                </h1>
+                            </li>
+                            <li>
+                                <h5 class="my-2 animate__animated animate__fadeInUp animate__delay-1s">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias placeat minus vitae
+                                    error, ipsum voluptatum velit, neque eum labore quasi a mollitia non! Aut mollitia natus
+                                    adipisci, dolorum cupiditate dolor.
+                                </h5>
+                            </li>
+    
+                            <li>
+                                <ul class="d-flex animate__animated animate__fadeInUp animate__delay-1s">
+                                    <li class="bookmark mr-2">
+                                        <img src="images/bookmark-white.svg" alt="bookmark">
+                                    </li>
+    
+                                    <li class="btn ml-2">
+                                        <div class="btn-hover">
+                                        </div>
+                                        TAKE A TOUR WİTH US
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="row content">
+                    <div class="col-5">
+                        <ul>
+                            <li class="string my-2 animate__animated animate__fadeInUp animate__delay-1s"></li>
+                            <li>
+                                <h3 class="my-2 animate__animated animate__fadeInUp animate__delay-1s">Sierra Nevada</h3>
+                            </li>
+                            <li>
+                                <h1 class="my-2 animate__animated animate__fadeInUp animate__delay-1s">
+                                    NAGANA PREFECTURE
+                                </h1>
+                            </li>
+                            <li>
+                                <h5 class="my-2 animate__animated animate__fadeInUp animate__delay-1s">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias placeat minus vitae
+                                    error, ipsum voluptatum velit, neque eum labore quasi a mollitia non! Aut mollitia natus
+                                    adipisci, dolorum cupiditate dolor.
+                                </h5>
+                            </li>
+    
+                            <li>
+                                <ul class="d-flex animate__animated animate__fadeInUp animate__delay-1s">
+                                    <li class="bookmark mr-2">
+                                        <img src="images/bookmark-white.svg" alt="bookmark">
+                                    </li>
+    
+                                    <li class="btn ml-2">
+                                        <div class="btn-hover">
+                                        </div>
+                                        TAKE A TOUR WİTH US
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="row content show">
+                    <div class="col-5">
+                        <ul>
+                            <li class="string my-2 animate__animated animate__fadeInUp animate__delay-1s"></li>
+                            <li>
+                                <h3 class="my-2 animate__animated animate__fadeInUp animate__delay-1s">@pasadagli</h3>
+                            </li>
+                            <li>
+                                <h1 class="my-2 animate__animated animate__fadeInUp animate__delay-1s">
+                                    NAGANA PREFECTURE
+                                </h1>
+                            </li>
+                            <li>
+                                <h5 class="my-2 animate__animated animate__fadeInUp animate__delay-1s">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias placeat minus vitae
+                                    error, ipsum voluptatum velit, neque eum labore quasi a mollitia non! Aut mollitia natus
+                                    adipisci, dolorum cupiditate dolor.
+                                </h5>
+                            </li>
+    
+                            <li>
+                                <ul class="d-flex animate__animated animate__fadeInUp animate__delay-1s">
+                                    <li class="bookmark mr-2">
+                                        <img src="images/bookmark-white.svg" alt="bookmark">
+                                    </li>
+    
+                                    <li class="btn ml-2">
+                                        <div class="btn-hover">
+                                        </div>
+                                        TAKE A TOUR WİTH US
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-bottom">
+                <div class="header-bottom-width row align-items-center justify-content-between">
+                    <div class="col-auto slide-buttons-wrapper">
+                        <ul class="d-flex slide-buttons align-items-center">
+                            <li id="slideLeft" class="btn">
+                                <img src="images/arrow_left.svg" alt="">
+                            </li>
+
+                            <li id="stop" class="btn border-none">
+                                <img src="images/pause-white.svg" alt="">
+                            </li>
+
+                            <li id="play" class="btn border-none">
+                                <img src="images/play-arrow-white.svg" alt="">
+                            </li>
+                            <li id="slideRight" class="btn">
+                                <img src="images/arrow_right.svg" alt="">
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-auto progress-wrapper">
+                        <div class="progress">
+                            <div id="progressBar" class="progress-bar animate__animated"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-1 count-wrapper">
+                        <div id="count" class="count">
+                            0
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- header -->
+
+
+    <footer class="bg-dark">
+
+    </footer>
+</body>
+
+<!-- _____________________________ AOS _____________________________________________________________ -->
+<!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+	AOS.init({
+		offset: 400, // offset (in px) from the original trigger point
+		delay: 0, // values from 0 to 3000, with step 50ms
+		duration: 1000 // values from 0 to 3000, with step 50ms
+	});
+</script> -->
+
+<!-- _____________________________ ScrollReveal _____________________________________________________________ -->
+<!-- <script>
+	window.sr = ScrollReveal();
+	sr.reveal('.class adi', {
+		duration: 2000
+	});
+</script> -->
+
+<!-- _____________________________ Lightbox _____________________________________________________________ -->
+<!-- <script type="text/javascript" src="scripts/default/lightbox.min.js"></script> -->
+
+<!-- _____________________________ SmoothScroll _____________________________________________________________ -->
+<!-- <script type="text/javascript" src="scripts/default/smooth-scroll.min.js"></script>
+<script>
+	var scroll = new SmoothScroll('a[href*="#"]');
+</script> -->
+
+<!-- _____________________________ WOW _____________________________________________________________ -->
+<!-- <script src="scripts/default/wow.min.js"></script>
+<script>
+	new WOW().init();
+</script> -->
+
+<!-- _____________________________ jquery _____________________________________________________________ -->
+<script type="text/javascript" src="scripts/default/jquery-3.5.1.min.js"></script>
+
+<!-- _____________________________ bootstrap _____________________________________________________________ -->
+<script type="text/javascript" src="scripts/default/bootstrap.bundle.min.js"></script>
+
+<!-- _____________________________ custom.js _____________________________________________________________ -->
+<script type="text/javascript" src="scripts/custom.js"></script>
+
+
+</html>
