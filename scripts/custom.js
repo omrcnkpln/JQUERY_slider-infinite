@@ -5,30 +5,45 @@ $(function () {
     $("#slideRight").click(function () {
         addClasses();
         clearInterval(interval);
-        timerRight();
+        timer();
+        $("#stop").addClass("show").siblings().removeClass("show");
+        $("#time-bar").removeClass("time-bar-ani");
     })
 
-    $("#slideLeft").click(function () {
-        addClassesLeft();
-        clearInterval(interval);
-        timerRight();
-    })
+    // $("#slideLeft").click(function () {
+    //     addClassesLeft();
+    //     clearInterval(interval);
+    // })
 
     $("#stop").click(function () {
         clearInterval(interval);
+        $("#play").addClass("show").siblings().removeClass("show");
+        $("#time-bar").removeClass("time-bar-ani");
     });
 
     $("#play").click(function () {
-        timerRight();
+        timer();
+        $("#stop").addClass("show").siblings().removeClass("show");
     });
 
-    var timerRight = function () {
+    setTimeout(() => {
+        $("#time-bar").addClass("time-bar-ani");
+    }, 1000);
+
+    var timer = function () {
         interval = setInterval(function () {
             addClasses()
-        }, 3000);
+            
+            $("#time-bar").removeClass("time-bar-ani");
+    
+            setTimeout(() => {
+                $("#time-bar").addClass("time-bar-ani");
+            }, 1000);
+        }, 4000);
+
     };
 
-    timerRight();
+    timer();
 });
 
 var i = 0;
@@ -94,24 +109,75 @@ function addClasses() {
 function progressBar() {
     if (i == 0) {
         $("#progressBar").addClass("progress-2");
-        $("#count").text("2");
+
+        $(".count").removeClass("animate__fadeInRight");
+
+        setTimeout(() => {
+            $(".count").addClass("animate__fadeInRight");
+            $("#count").text("02");
+        }, 1000);
+
+        setTimeout(() => {
+            
+        }, 1000);
     }
-     else if (i == 1) {
+    else if (i == 1) {
         $("#progressBar").addClass("progress-3").removeClass("progress-2");
-        $("#count").text("3");
+
+        $(".count").removeClass("animate__fadeInRight");
+
+        setTimeout(() => {
+            $(".count").addClass("animate__fadeInRight");
+            $("#count").text("03");
+        }, 1000);
     } else if (i == 2) {
         $("#progressBar").addClass("progress-4").removeClass("progress-3");
-        $("#count").text("4");
+
+        $(".count").removeClass("animate__fadeInRight");
+
+        setTimeout(() => {
+            $(".count").addClass("animate__fadeInRight");
+            $("#count").text("04");
+        }, 1000);
     } else if (i == 3) {
         $("#progressBar").addClass("progress-5").removeClass("progress-4");
-        $("#count").text("5");
+
+        $(".count").removeClass("animate__fadeInRight");
+
+        setTimeout(() => {
+            $(".count").addClass("animate__fadeInRight");
+            $("#count").text("05");
+        }, 1000);
     } else if (i == 4) {
         $("#progressBar").addClass("progress-6").removeClass("progress-5");
-        $("#count").text("6");
+        
+        $(".count").removeClass("animate__fadeInRight");
+
+        setTimeout(() => {
+            $(".count").addClass("animate__fadeInRight");
+            $("#count").text("06");
+        }, 1000);
     } else if (i == 5) {
         $("#progressBar").removeClass().addClass("progress-bar animate__animated progress-1");
-        $("#count").text("1");
+
+        $(".count").removeClass("animate__fadeInRight");
+
+        setTimeout(() => {
+            $(".count").addClass("animate__fadeInRight");
+            $("#count").text("01");
+        }, 1000);
     }
+
+    // setTimeout(() => {
+    //     $(".count").removeClass("animate__fadeInRight");
+        
+    //     setTimeout(() => {
+    //         $(".count").addClass("animate__fadeInRight");
+    //     }, 1000);
+    // }, 1000);
+    
+
+
     changeContent();
 };
 
@@ -155,7 +221,7 @@ function changeContent() {
         if (i == 0) {
             $(".content").eq(1).addClass("show").siblings().removeClass("show");
         }
-         else if (i == 1) {
+        else if (i == 1) {
             $(".content").eq(2).addClass("show").siblings().removeClass("show");
         } else if (i == 2) {
             $(".content").eq(3).addClass("show").siblings().removeClass("show");

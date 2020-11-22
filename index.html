@@ -45,6 +45,10 @@
 </head>
 
 <body>
+    <div id="time-bar" class="time-bar">
+
+    </div>
+
     <div id="overlay" class="overlay shadow">
         <div class="item r-50 item-0 animate__animated">
             <div class="shadow">
@@ -208,16 +212,18 @@
                     <div class="col-md-5">
                         <ul>
                             <li class="string my-2 animate__animated animate__fadeInUp animate__delay-1s"></li>
-                            <li>
-                                <h3 class="my-2 animate__animated animate__fadeInUp animate__delay-1s">1.içerik @pasadagli</h3>
+                            <li class="my-2 animate__animated animate__fadeInUp animate__delay-1s">
+                                <h3>
+                                    1.içerik @pasadagli
+                                </h3>
                             </li>
-                            <li>
-                                <h1 class="my-2 animate__animated animate__fadeInUp animate__delay-1s">
+                            <li class="my-2 animate__animated animate__fadeInUp animate__delay-1s">
+                                <h1>
                                     NAGANA PREFECTURE
                                 </h1>
                             </li>
-                            <li>
-                                <h5 class="my-2 animate__animated animate__fadeInUp animate__delay-1s">
+                            <li class="my-2 animate__animated animate__fadeInUp animate__delay-1s">
+                                <h5>
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias placeat minus vitae
                                     error, ipsum voluptatum velit, neque eum labore quasi a mollitia non! Aut mollitia natus
                                     adipisci, dolorum cupiditate dolor.
@@ -280,7 +286,7 @@
     
                 <div class="row content">
                     <div class="col-md-5">
-                        <ul>
+                        <ul class="">
                             <li class="string my-2 animate__animated animate__fadeInUp animate__delay-1s"></li>
                             <li>
                                 <h3 class="my-2 animate__animated animate__fadeInUp animate__delay-1s">3.içerik woman</h3>
@@ -431,17 +437,22 @@
                 <div class="header-bottom-width row align-items-center justify-content-between">
                     <div class="col-auto slide-buttons-wrapper">
                         <ul class="d-flex slide-buttons align-items-center">
-                            <li id="slideLeft" class="btn">
+                            <!-- <li id="slideLeft" class="btn">
                                 <img src="images/arrow_left.svg" alt="">
+                            </li> -->
+
+                            <li>
+                                <ul class="play-stop">
+                                    <li id="stop" class="btn stop show">
+                                        <img src="images/pause-white.svg" alt="">
+                                    </li>
+
+                                    <li id="play" class="btn play">
+                                        <img src="images/play-arrow-white.svg" alt="">
+                                    </li>
+                                </ul>
                             </li>
 
-                            <li id="stop" class="btn border-none">
-                                <img src="images/pause-white.svg" alt="">
-                            </li>
-
-                            <li id="play" class="btn border-none">
-                                <img src="images/play-arrow-white.svg" alt="">
-                            </li>
                             <li id="slideRight" class="btn">
                                 <img src="images/arrow_right.svg" alt="">
                             </li>
@@ -455,8 +466,8 @@
                     </div>
 
                     <div class="col-1 count-wrapper">
-                        <div id="count" class="count">
-                            1
+                        <div id="count" class="count animate__animated">
+                            01
                         </div>
                     </div>
                 </div>
