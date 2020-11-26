@@ -33,9 +33,9 @@ $(function () {
     var timer = function () {
         interval = setInterval(function () {
             addClasses()
-            
+
             $("#time-bar").removeClass("time-bar-ani");
-    
+
             setTimeout(() => {
                 $("#time-bar").addClass("time-bar-ani");
             }, 1000);
@@ -118,7 +118,7 @@ function progressBar() {
         }, 1000);
 
         setTimeout(() => {
-            
+
         }, 1000);
     }
     else if (i == 1) {
@@ -150,7 +150,7 @@ function progressBar() {
         }, 1000);
     } else if (i == 4) {
         $("#progressBar").addClass("progress-6").removeClass("progress-5");
-        
+
         $(".count").removeClass("animate__fadeInRight");
 
         setTimeout(() => {
@@ -170,12 +170,12 @@ function progressBar() {
 
     // setTimeout(() => {
     //     $(".count").removeClass("animate__fadeInRight");
-        
+
     //     setTimeout(() => {
     //         $(".count").addClass("animate__fadeInRight");
     //     }, 1000);
     // }, 1000);
-    
+
 
 
     changeContent();
